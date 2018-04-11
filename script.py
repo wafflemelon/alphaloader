@@ -42,7 +42,7 @@ def getlink(url):
 
 def downloader(urllist):
     no = 0
-    DEFAULT_DIRECTORY = str(os.getcwd()) + f"/pics"
+    DEFAULT_DIRECTORY = str(os.getcwd()) + f"/wallpapers"
     os.chdir(DEFAULT_DIRECTORY)
     for item in urllist[0:]:
         pic_url = item[0]
