@@ -61,7 +61,7 @@ def downloader(urllist):
 inp = input("Enter the URL:\n>")
 url = f'{inp}&page=1'
 baseurl = url[0:url.find('page=')+5]
-print(baseurl)
+# print(baseurl)
 r = requests.get(url)
 soup = BeautifulSoup(r.content, "html.parser")
 all_anchors = soup.find_all("a")
